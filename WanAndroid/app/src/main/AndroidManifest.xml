@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.wanandroid">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/net_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WanAndroid">
+        <activity android:name=".activitise.function.AboutActivity"
+           android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name=".activitise.function.CoinActivity" />
+        <activity android:name=".activitise.function.MyCollectActivity" />
+        <activity android:name=".activitise.common.ShareUserActivity" />
+        <activity
+            android:name=".activitise.function.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activitise.function.ProjectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activitise.function.KnowledgeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activitise.common.WebActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".log_and_register.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".log_and_register.LogInActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activitise.main.HomePageActivity"
+            android:label="wanAndroid"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+    </application>
+
+</manifest>
